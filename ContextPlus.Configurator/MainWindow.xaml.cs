@@ -24,5 +24,22 @@ namespace ContextPlus.Configurator
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// Gets or sets the view model.
+        /// </summary>
+        public MainWindowViewModel ViewModel
+        {
+            get
+            {
+                return (MainWindowViewModel)DataContext;
+            }
+
+            set
+            {
+                DataContext = value;
+            }
+        }
+
     }
 }

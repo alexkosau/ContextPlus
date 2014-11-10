@@ -13,5 +13,10 @@ namespace ContextPlus.Configurator
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnActivated(EventArgs e)
+        {
+            base.OnActivated(e);
+            ((MainWindow)this.MainWindow).ViewModel = new MainWindowViewModel();
+        }
     }
 }
